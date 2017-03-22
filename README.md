@@ -11,20 +11,17 @@ All of the code is organized into folders. Each folder starts with a number foll
 
 The code will look like the following:
 
-...
-LOCAL AddItem()
-
-CLEARLASTERROR;
-IF ExceptionHandle.Try('12345','MyTestItem') THEN
-
-  MESSAGE('Item added Successfully')
-
-ELSE
-
-  MESSAGE('Error Returned Error : %1 - %2',
-
-GETLASTERRORCODE,GETLASTERRORTEXT);
- ...
+```
+func canAddUser(user: EDSUser) -> Bool
+{
+    if (_users.contains(user)) 
+    {
+        return false;
+    } else {
+        return true;
+    }
+}
+```
  
  ## Related Products
 * [Implementing Microsoft Dynamics NAV 2013](https://www.packtpub.com/application-development/implementing-microsoft-dynamics-nav-2013?utm_source=github&utm_medium=repository&utm_content=9781849686020)
