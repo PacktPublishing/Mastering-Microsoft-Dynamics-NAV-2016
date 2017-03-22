@@ -11,7 +11,7 @@ All of the code is organized into folders. Each folder starts with a number foll
 
 The code will look like the following:
 
-LOCAL AddItem()
+LOCAL AddItem(){
 CLEARLASTERROR;
 IF ExceptionHandle.Try('12345','MyTestItem') THEN
   MESSAGE('Item added Successfully')
