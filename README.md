@@ -14,9 +14,9 @@ The code will look like the following:
 LOCAL AddItem()
 CLEARLASTERROR;
 IF ExceptionHandle.Try('12345','MyTestItem') THEN
- MESSAGE('Item added Successfully')
+  MESSAGE('Item added Successfully')
 ELSE
- MESSAGE('Error Returned Error : %1 - %2',
+  MESSAGE('Error Returned Error : %1 - %2',
  GETLASTERRORCODE,GETLASTERRORTEXT);
  
  
